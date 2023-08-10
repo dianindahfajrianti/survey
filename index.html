@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <title>Survey Kepuasan Pelanggan</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="survey" class="survey">
+
+        <!-- ======= logo ======= -->
+        <div class="logo position-absolute top-0 start-0">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+
+        <div class="cont">
+
+            <!-- ======= Header ======= -->
+            <header class="section-header ">
+                <h2>Survey Kepuasan Pelanggan</h2>
+                <p>Pilih dengan menekan salah satu di bawah ini</p>
+            </header>
+
+            <!-- Step 1 -->
+            <form id="s1" class="step1" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row d-grid justify-content-center mx-auto">
+                    <div class="col-12 my-2">
+                        <label class="btn"><input class="rdMenu" type="radio" name="type" value="servis" />
+                            Service
+                        </label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label class="btn"><input class="rdMenu" type="radio" name="type" value="ambil" />
+                        Pengambilan Service
+                        </label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label class="btn"><input class="rdMenu" type="radio" name="type" value="beli" />
+                        Pembelian Sparepart
+                        </label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label class="btn"><input class="rdMenu" type="radio" name="type" value="lain2" />
+                        Lain - Lain
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Step 2 -->
+            <div id="s2" class="step2 d-none justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row">
+                    <div class="col-3 d-flex justify-content-center">
+                        <label><input class="rdSurvey" type="radio" name="rate" value="4" />
+                            <div class="nilai">
+                                <img src="assets/img/sangat-puas.png" alt="">
+                                <h4>Sangat Puas</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <label><input class="rdSurvey" type="radio" name="rate" value="3" />
+                            <div class="nilai">
+                                <img src="assets/img/puas.png" alt="">
+                                <h4>Puas</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <label><input class="rdSurvey" type="radio" name="rate" value="2" />
+                            <div class="nilai">
+                                <img src="assets/img/cukup.png" alt="">
+                                <h4>Tidak Puas</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <label><input class="rdSurvey" type="radio" name="rate" value="1" />
+                            <div class="nilai">
+                                <img src="assets/img/tidak-puas.png" alt="">
+                                <h4>Sangat Tidak Puas</h4>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="back d-none position-absolute bottom-0 start-0">
+            <img src="assets/img/back.png" alt="">
+        </div>
+
+
+    </section><!-- End survey Section -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        $().ready(function() {
+            $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>

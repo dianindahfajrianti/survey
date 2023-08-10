@@ -1,0 +1,307 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #106eea;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3b8af2;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.section-header p {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #444444;
+  padding-top: 40px;
+}
+.section-header h2 {
+  padding: 0;
+  font-size: 72px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 70px;
+}
+@media (max-width: 991px) {
+  section {
+    padding: 25px 0;
+  }
+  .section-header {
+    padding-bottom: 10px;
+  }
+  .section-header h2 {
+    font-size: 55px;
+    line-height: 60px;
+    margin: 5px 0 20px 0;
+  }
+  .section-header p {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+  .section-header h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin: 10px;
+  }
+  .section-header p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 20px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Survey
+--------------------------------------------------------------*/
+.survey {
+  width: 100%;
+  height: auto;
+  background: url(../img/bg.jpg) top center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .survey {
+    height: 100vh;
+  }
+}
+@media (max-width: 991px) {
+  .survey {
+    height: 100vh;
+  }
+}
+.survey:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.survey .cont {
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+.survey .logo {
+  position: relative;
+  padding: 30px;
+  /* background: rgba(255, 255, 255, 0.7); */
+  margin: 20px;
+  /* padding: 20px 17px 20px 15px; */
+  border-radius: 20px;
+}
+.survey .logo img {
+  height: auto;
+  width: 200px;
+}
+@media (max-width: 991px) {
+  .survey .logo {
+    padding: 0;
+  }
+  .survey .logo img {
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .survey .logo {
+    padding: 15px;
+  }
+  .survey .logo img {
+    width: 100px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Step 1
+--------------------------------------------------------------*/
+.step1 .btn {
+  background: #0075FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 62px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  color: #FFFFFF;
+  padding: 0px 100px;
+  min-width: 100%;
+  text-align: center;
+}
+.step1 .btn:hover {
+  background: #489cfd;
+}
+.step1 label {
+  margin: 10px 0;
+}
+@media (max-width: 991px) {
+  .step1 label {
+    margin: 0;
+  }
+  .step1 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .step1 .btn {
+    font-size: 20px;
+    line-height: 45px;
+    padding: 0px 50px;
+  }
+  .step1 label {
+    margin: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# step2
+--------------------------------------------------------------*/
+.step2 {
+  margin-top: 70px;
+}
+.step2 .nilai {
+  transition: all ease-in-out 0.4s;
+  text-align: center;
+  margin: 0 45px;
+}
+.step2 .nilai h4 {
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+  background-color: #0075FF;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 40px;
+  padding: 10px 0;
+
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #5b5b5b; */
+}
+.step2 .nilai:hover {
+  transform: translateY(-10px);
+}
+.step2 img {
+  height: auto;
+  width: 250px;
+}
+@media (max-width: 991px) {
+  .step2 .nilai {
+    padding: 0;
+    width: 220px;
+  }
+  .step2 .nilai h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 8px 7px;
+    /* font-size: 30px; */
+  }
+  .step2 img {
+    width: 140px;
+    margin-bottom: 10px;
+  }
+  .step2 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .step2 .nilai {
+    padding: 10px;
+    width: 160px;
+    margin: 0;
+  }
+  .step2 .nilai h4 {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 8px 7px;
+    /* font-size: 18px; */
+  }
+  .step2 img {
+    width: 110px;
+  }
+}
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+/*--------------------------------------------------------------
+# Hidden
+--------------------------------------------------------------*/
+input[type="radio"]{
+  visibility:hidden;
+  display: none;
+}
+input[type="radio"]:checked{
+  visibility:hidden;
+  display: none;
+}
+
+.is-hide {
+  visibility: hidden !important;
+  display: none;
+}
+
+.not-hide {
+  visibility: visible !important;
+}
+
+/*--------------------------------------------------------------
+# Back
+--------------------------------------------------------------*/
+.back img {
+  width: 100px;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .back img {
+    width: 80px;
+    margin-left: 20px;
+  }
+}
